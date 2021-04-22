@@ -1,3 +1,15 @@
+//Menu nav
+
+function menuNav() {
+    var menu = document.querySelector(".menuModal")
+    
+    if(menu.style.display = "none") {
+        menu.style.display = "block"
+    } else {
+        menu.style.display = "none"
+    }
+}
+
 //Botoes calcular e cancelar
 
 function calcular() {
