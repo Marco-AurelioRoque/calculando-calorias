@@ -1,12 +1,202 @@
+/*KeyFrames*/
+
+/*Tira hr*/
+
+@keyframes tiraCampoHr {
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 10;
+    }
+}
+
+/*Modal*/
+
+@keyframes animate {
+    0% {
+        width: 0%;
+        height: 0%;
+    }
+
+    25%{
+    
+    }
+
+    50%{
+    
+    }
+
+    100% {
+      width: 22%;
+      height: 22%;
+    }
+}
+
+/*Paragrafo info*/
+
+@keyframes tiraCampoParagrafo {
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 10;
+    }
+}
+
+/*Tira campo alimento*/
+
+@keyframes tiraCampo1 {
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 10;
+    }
+}
+
+/*Tira campo carboidrato*/
+
+@keyframes tiraCampo2 {
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 10;
+    }
+}
+
+/*Tira campo Proteina*/
+
+@keyframes tiraCampo3 {
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 10;
+    }
+}
+
+/*Tira campo lipidios*/
+
+@keyframes tiraCampo4 {
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 10;
+    }
+}
+
+/*Tira campo calcular*/
+
+
+@keyframes tiraCampo5 {
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 10;
+    }
+}
+
+/*Tira campo cancelar*/
+
+
+@keyframes tiraCampo6 {
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 10;
+    }
+}
+
+
+/*==============================================================================================================*/
+
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(241, 238, 241);
+    background-color: rgb(214, 214, 214);
     overflow-y: hidden;
 }
-/*Modal*/
+/*modalWrapper*/
 h1{
     text-align: center;
 }
@@ -24,21 +214,25 @@ h1{
     width: 200px;
     height: 70px;
     border-radius: 5px;
-    background-color: rgb(0, 217, 255);
+    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     cursor: pointer;
     font-size: 20px;
     box-shadow: 2px 3px 5px rgb(156, 156, 156);
 }
-.toggleModal:hover{
-    background-color: rgb(18, 172, 243);
-}
 
+.toggleModal:hover{
+    background-color: rgb(245, 245, 245);
+}
+/*Linha horizontal*/
 hr{
     height: 3px;
     background-color: black;
+    animation: tiraCampoHr;
+    animation-duration: 1500ms;
 }
 
+/*Modal*/
 .modal{
     margin-top: 30px;
     display: none;
@@ -48,21 +242,37 @@ hr{
     width: 300px;
     height: 430px;
     border: 2px solid black;
-    background-color: rgb(248, 252, 6);
+    background-color: rgb(98, 134, 252);
+    animation: animate 5s ease-in;
+    animation-duration: 800ms;
 }
+
 /*Botoes modal*/
+
+.paragrafoInfo{
+    animation: tiraCampoParagrafo;
+    animation-duration: 1500ms;
+}
+
+
 #alimento {
     margin-top: 30px;
     margin-bottom: 20px;
     width: 200px;
     height: 35px;
     border-radius: 10px;
+    animation: tiraCampo1;
+    animation-duration: 1500ms;
 }
+
+
 
 #carboidrato{
     width: 200px;
     height: 35px;
     border-radius: 10px;
+    animation: tiraCampo2;
+    animation-duration: 1500ms;
 }
 
 #proteina{
@@ -71,6 +281,8 @@ hr{
     margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
+    animation: tiraCampo3;
+    animation-duration: 1500ms;
 }
 
 #lipidios{
@@ -78,15 +290,21 @@ hr{
     height: 35px;
     margin-bottom: 25px;
     border-radius: 10px;
+    animation: tiraCampo4;
+    animation-duration: 1500ms;
 }
+
 
 #calcularCaloria{
     width: 150px;
     height: 30px;
     margin-bottom: 5px;
-    background-color: rgb(51, 255, 0);
+    background-color: rgb(95, 253, 55);
     cursor: pointer;
+    animation: tiraCampo5;
+    animation-duration: 1500ms;
 }
+
 #calcularCaloria:hover{
     background-color:rgb(63, 207, 34);
 }
@@ -97,7 +315,10 @@ hr{
     height: 30px;
     background-color: rgb(255, 0, 0);
     cursor: pointer;
+    animation: tiraCampo6;
+    animation-duration: 1500ms;
 }
+
 #cancelar:hover{
     background-color:rgb(223, 24, 24);
 }
@@ -120,9 +341,12 @@ hr{
 }
 
 #imagemCaloria{
-    border: 10px dashed rgb(0, 0, 0);
-    margin-top: 10px;
+    border: 7px solid rgb(0, 0, 0);
+    margin-bottom: 20px;
 }
+
+
+
 
 
 
