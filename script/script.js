@@ -1,18 +1,7 @@
-//Menu nav
-
-function menuNav() {
-    var menu = document.querySelector(".menuModal")
-    
-    if(menu.style.display = "none") {
-        menu.style.display = "block"
-    } else {
-        menu.style.display = "none"
-    }
-}
-
 //Botoes calcular e cancelar
 
 function calcular() {
+
     document.querySelector("#calcularCaloria")
 
     document.querySelector(".modal").style.display = "none"
@@ -26,15 +15,15 @@ function calcular() {
     proteina = proteina * 4
     lipidio = lipidio * 9
 
-    var resultado = parseInt(carboidrato) + parseInt(proteina) + parseInt(lipidio)
+    var resultado = parseFloat(carboidrato) + parseFloat(proteina) + parseFloat(lipidio)
 
-    document.querySelector(".resultadoFinal").innerHTML = alimentoDesejado + " contem: " + resultado + " calorias"
-
-    
-
+    var resultadoNaTela = document.querySelector(".resultadoFinal").innerHTML = alimentoDesejado + " contem: " + resultado.toFixed(2) + " calorias"
 }
 
 function cancelar() {
+
+    document.querySelector(".imagemCaloria-wrapper").style.display = "block".display = "flex"
+
     document.querySelector("#cancelar")
 
     document.querySelector(".modal").style.display = "none"
@@ -43,6 +32,9 @@ function cancelar() {
 //Botao abre Modal
 
 function toggleModal() {
+    
+    document.querySelector(".imagemCaloria-wrapper").style.display = "none"
+
     document.querySelector(".modal").style.display = "block"
 
     document.querySelector(".resultadoFinal").innerHTML = ""

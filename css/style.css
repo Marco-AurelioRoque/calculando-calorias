@@ -4,6 +4,7 @@ body{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(241, 238, 241);
+    overflow-y: hidden;
 }
 /*Modal*/
 h1{
@@ -14,30 +15,40 @@ h1{
     text-align: center;
 }
 /*Botao Toggle modal*/
+.botaoAbreModal{
+    text-align: center;
+}
+
 .toggleModal{
-    margin-bottom: 20px;
-    width: 150px;
-    height: 50px;
+    margin-top: 12px;
+    width: 200px;
+    height: 70px;
     border-radius: 5px;
     background-color: rgb(0, 217, 255);
     color: rgb(0, 0, 0);
     cursor: pointer;
-    font-size: 17px;
+    font-size: 20px;
     box-shadow: 2px 3px 5px rgb(156, 156, 156);
 }
 .toggleModal:hover{
     background-color: rgb(18, 172, 243);
 }
 
+hr{
+    height: 3px;
+    background-color: black;
+}
+
 .modal{
+    margin-top: 30px;
     display: none;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
     width: 300px;
-    height: 370px;
+    height: 430px;
     border: 2px solid black;
-    background-color: rgb(253, 231, 251);
+    background-color: rgb(248, 252, 6);
 }
 /*Botoes modal*/
 #alimento {
@@ -81,6 +92,7 @@ h1{
 }
 
 #cancelar {
+    margin-bottom: 10px;
     width: 150px;
     height: 30px;
     background-color: rgb(255, 0, 0);
@@ -95,52 +107,22 @@ h1{
 }
 /*Resultado final*/
 .resultadoFinal {
-    color: white;
+    margin-top: 100px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
 }
 
-/*Menu Nav*/
+/*Imagem*/
 
-.menuModal{
-    background-color: rgb(108, 92, 255);
-    padding: 5px;
-}
-
-.menuModal ul{
+.imagemCaloria-wrapper{
     display: flex;
-    justify-content: space-around;
-    cursor: pointer;
+    justify-content: center;
 }
 
-.menuModal ul li {
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    font-size: 20px;
-
+#imagemCaloria{
+    border: 10px dashed rgb(0, 0, 0);
+    margin-top: 10px;
 }
 
-.menuModal ul li a{
-    list-style: none;
-    text-decoration: none;
-}
 
-.menuModal ul li a:hover{
-    color: rgb(255, 255, 255);
-}
 
-.menuHamburguer {
-    margin-left: auto;
-    margin-right: auto;
-    display: none;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 600px) {
-    .menuModal{
-        display: none;
-    }
-
-    .menuHamburguer{
-        display: block;
-    }
-}

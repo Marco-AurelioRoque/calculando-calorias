@@ -8,25 +8,24 @@
     <title>Calculadora de calorias</title>
 </head>
 <body>
-    
-    <img class="menuHamburguer" onclick="menuNav()" src="https://th.bing.com/th/id/R53dd0b4ce20567ce28b8219d3008ad18?rik=1nia8WU5QUQHgA&pid=ImgRaw" alt="Imagem menu, 3 tracinhos" width="50px" height="50px">
-
-    <nav class="menuModal">
-        <ul>
-            <li><a href="">Carboidrato</a></li>
-            <li><a href="">Proteinas</a></li>
-            <li><a href="">Lipídios</a></li>
-            <li><a href="">Como funciona</a></li>
-        </ul>
-    </nav>
-
     <h1>Calculando calorias</h1>
 
     <!--Modal-->
 
-    <section class="modal-wrapper">
+    <div class="botaoAbreModal">
         <button class="toggleModal" onclick="toggleModal()">Calcular caloria do alimento</button>
+    </div>      
+
+    <section class="modal-wrapper">
+
+        
+
         <div class="modal">
+
+            <p>Insira as informações abaixo:</p>
+
+            <hr>
+
             <input type="text" name="alimento" id="alimento" placeholder="Alimento:">
 
             <input type="number" name="carboidrato" id="carboidrato" placeholder="Carboidrato do alimento: ">
@@ -45,6 +44,10 @@
     <section class="resultado-wrapper">
         <h3 class="resultadoFinal"></h3>
     </section>
+
+    <div class="imagemCaloria-wrapper">
+        <img id="imagemCaloria" src="https://cdn.pixabay.com/photo/2016/03/09/15/30/breakfast-1246686_960_720.jpg" alt="Almoço" width="420" height="300">
+    </div>
 
     <script src="script/script.js"></script>
 </body>
