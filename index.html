@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora de calorias</title>
+</head>
+<body>
+    
+    <h1>Calculando calorias</h1>
+
+    <!--Modal-->
+
+    <section class="modal-wrapper">
+        <button class="toggleModal" onclick="toggleModal()">Calcular caloria do alimento</button>
+        <div class="modal">
+            <input type="text" name="alimento" id="alimento" placeholder="Alimento:">
+
+            <input type="number" name="carboidrato" id="carboidrato" placeholder="Carboidrato do alimento: ">
+            <input type="number" name="proteina" id="proteina" placeholder="Proteina do alimento: ">
+            <input type="number" name="lipidios" id="lipidios" placeholder="Gordura total do alimento: ">
+            
+            <br>
+
+            <input type="button" onclick="calcular()" id="calcularCaloria" value="Calcular caloria">
+            <input type="button" onclick="cancelar()" id="cancelar" value="Cancelar">
+        </div>
+    </section>
+
+    <!--Resultado-->
+
+    <section class="resultado-wrapper">
+        <h3 class="resultadoFinal"></h3>
+    </section>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
