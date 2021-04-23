@@ -29,17 +29,15 @@
     }
 
     25%{
-    
+        width: 5%;
+        height: 5%;
     }
 
     50%{
-    
+        width: 10%;
+        height: 10%;
     }
 
-    100% {
-      width: 22%;
-      height: 22%;
-    }
 }
 
 /*Paragrafo info*/
@@ -343,6 +341,14 @@ hr{
 #imagemCaloria{
     border: 7px solid rgb(0, 0, 0);
     margin-bottom: 20px;
+}
+
+/*Medias*/
+@media screen and (max-width: 360px) {
+    #imagemCaloria{
+        width: 340px;
+        height: 230px;
+    }
 }
 
 
