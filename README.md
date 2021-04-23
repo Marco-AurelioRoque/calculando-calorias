@@ -23,5 +23,5 @@ Deixar mais bonito.
 
 
 
-Projeto finalizado: [LINK](calculador-de-caloria.netlify.app)
+Projeto finalizado: [LINK](calculador-de-calorias.netlify.app)
  
